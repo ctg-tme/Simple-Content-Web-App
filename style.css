@@ -1,0 +1,81 @@
+.column.has-3-rows {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* .column.has-3-rows .column-box {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    height: 33vh;
+} */
+
+.column.has-3-rows .column-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    height: 33vh;
+    overflow: hidden;
+}
+
+.column-box h2,
+.column-box p {
+    margin: 0.25rem 0;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+/* This wrapper div helps calculate available space */
+.column-box .image-wrapper {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.column-box .image-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+.footer.is-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+    --footer-height: 1.5rem;
+}
+
+.column.has-3-rows {
+    height: calc(100vh - var(--footer-height));
+}
+
+.column.center-graphic-column {
+    height: calc(100vh - (var(--footer-height)/32));
+}
+
+.center-graphic-column {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+}
+
+.center-graphic-column img {
+    object-fit: contain;
+    height: calc(100% - var(--footer-height));
+    display: block;
+}
