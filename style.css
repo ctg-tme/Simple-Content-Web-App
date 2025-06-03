@@ -1,19 +1,17 @@
+body {
+    background-color: black;
+}
+
 .column.has-3-rows {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-/* .column.has-3-rows .column-box {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    height: 33vh;
-} */
-
 .column.has-3-rows .column-box {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding: 1rem;
     height: 33vh;
     overflow: hidden;
