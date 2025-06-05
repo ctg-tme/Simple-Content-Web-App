@@ -1,5 +1,8 @@
+@import url(https://db.onlinewebfonts.com/c/044c1e0595c25636a5589b568081376a?family=CiscoSans+Light+Regular);
+
 body {
     background-color: black;
+    font-family: "CiscoSans Light Regular";
 }
 
 .column.has-3-rows {
